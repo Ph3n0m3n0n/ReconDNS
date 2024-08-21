@@ -1,5 +1,5 @@
 # ReconDNS
-This AWS Lambda script assumes a specified IAM role across all accounts in an AWS Organization to retrieve and log DNS A records from Route 53 hosted zones in parallel. 
+This AWS Lambda script assumes a specified IAM role across all accounts in an AWS Organization to retrieve and log DNS A records from Route 53 hosted zones in parallel. Used for infrastructure mapping, security auditing and asset inventory. It is designed to be performance driven and provide detailed debugging and logging information.
 
 # AWS Lambda Function: Cross-Account DNS A Record Retriever
 
