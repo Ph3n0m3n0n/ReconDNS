@@ -23,9 +23,8 @@ def assume_role(account_id, role_name):
 
 # Function to list all A records in a Route 53 hosted zone
 def get_a_records(credentials):
-    """
-    Retrieves A records from Route 53 hosted zones using the provided credentials.
-    """
+
+    # Retrieves A records from Route 53 hosted zones using the provided credentials.
     if not credentials:
         return []  # Early return if no credentials provided
 
@@ -84,9 +83,8 @@ def get_all_accounts():
 
 # AWS Lambda handler
 def lambda_handler(event, context):
-    """
-    Main Lambda function handler. Retrieves and processes A records from all accounts in the organization.
-    """
+
+    # Main Lambda function handler. Retrieves and processes A records from all accounts in the organization.
     role_name = "user-role-here"  # Enter the role to assume in each account
 
     # Automatically populate the accounts list with IDs from AWS Organizations
